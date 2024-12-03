@@ -12,7 +12,15 @@ section div {
     margin: 10px 0;
 }
 
+section{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 a {
     text-decoration: none;
     color: #333;
+}
+a:hover {
+    color: rgb(15, 15, 15);
 }
