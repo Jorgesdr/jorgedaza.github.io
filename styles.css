@@ -28,3 +28,7 @@ a:hover {
 .proyect{
     margin-top: 1em;
 }
+
+.proyect p {
+    max-width: 70%;
+}
