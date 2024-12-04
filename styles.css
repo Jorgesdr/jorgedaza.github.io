@@ -13,7 +13,9 @@ body {
     padding: 0;
     color: var(--primary-color);
     background-color: var(--background-color);
+    text-wrap: balance;
 }
+
 .languaje{
    max-width: 70%;
     text-align: right;
@@ -68,7 +70,11 @@ h1{
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #272727;
+}
+
+a:hover {
+    color: #000;
 }
 
 
@@ -139,4 +145,23 @@ a {
     padding: 5px 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.footer{
+    display: grid;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+    height: 10em;
+    background-color: var(--background-color2);
+    grid-template-columns: 1fr 1fr;
+    margin:20px auto ;
+    text-wrap: balance;
+}
+.footer-url{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
