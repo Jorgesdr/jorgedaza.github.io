@@ -1,10 +1,11 @@
 function openLightbox() {
     document.getElementById("lightbox").style.display = "flex";
+    console.log(document.getElementById("lightbox"));
 }
-
 // Función para cerrar el lightbox (popup)
 function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
+  console.log(document.getElementById("lightbox"));
 }
 
 
@@ -12,9 +13,11 @@ function closeLightbox() {
 document.addEventListener("DOMContentLoaded", function () {
     const esLanguaje = document.getElementById("esLanguaje");
     const enLanguaje = document.getElementById("enLanguaje");
+   
     // Aquí va el código que usa esLanguaje y enLanguaje
     const esText = document.querySelectorAll('#es');
     const enText = document.querySelectorAll('#en');
+
     function setLanguage(language) {
       if (language === 'es') {
         esLanguaje.classList.add('active');
@@ -27,11 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
         esText.forEach(el => el.classList.add('hidden'));
         enText.forEach(el => el.classList.remove('hidden'));
       }
-    }
-    console.log(esLanguaje);
+    }    
     esLanguaje.addEventListener('click', () => setLanguage('es'));
-    enLanguaje.addEventListener('click', () => setLanguage('en'));
-    
+    enLanguaje.addEventListener('click', () => setLanguage('en'));    
     // Establecer el idioma por defecto (puedes cambiarlo a 'es' si prefieres español como predeterminado)
     setLanguage('es');
 });
