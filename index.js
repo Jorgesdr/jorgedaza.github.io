@@ -1,13 +1,23 @@
-function openLightbox() {
-    document.getElementById("lightbox").style.display = "flex";
-    console.log(document.getElementById("lightbox"));
-}
-// Función para cerrar el lightbox (popup)
-function closeLightbox() {
-    document.getElementById("lightbox").style.display = "none";
-  console.log(document.getElementById("lightbox"));
-}
+function openLightbox(image) {
+            const lightbox = document.querySelector('.lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            lightbox.style.display = "flex";
+            lightboxImg.src = image.src; // Set the lightbox image to the clicked image
+        }
 
+        // Close lightbox when clicking outside the image or on the close button
+        function closeLightbox(event) {
+            if (event.target !== event.currentTarget || event.target === event.currentTarget || event.target.classList.contains('close-btn')) {
+                document.querySelector('.lightbox').style.display = "none";
+            }
+        }
+
+        // Add event listeners to all images with the class 'lightbox-trigger'
+        document.querySelectorAll('.lightbox-trigger').forEach(img => {
+            img.addEventListener('click', function() {
+                openLightbox(img);
+            });
+        });
 
 
 document.addEventListener("DOMContentLoaded", function () {

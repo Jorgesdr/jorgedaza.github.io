@@ -51,7 +51,7 @@
     <section class="section">
         <div class="proyect" >
             <div class="proyect-img">
-                <img src="statics/img/afiliatesweb.webp" alt="preciosrebajados" onclick="openLightbox()"></img>
+                <img class="lightbox-trigger" src="statics/img/afiliatesweb.webp" alt="preciosrebajados" onclick="openLightbox(this)"></img>
             </div>
             <div id="en" class="hidden">
                 <h4>Affiliate Program Web App</h4>
@@ -87,15 +87,15 @@
             </a> 
             </div>           
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div  class="lightbox" onclick="closeLightbox(event)">
             <div class="lightbox-img">
-                <img src="statics/img/afiliatesweb.webp" alt="Imagen Completa preciosrebajados">
-            <div class="close-btn" onclick="closeLightbox()">×</div>
+                <img id="lightboxImg" src="" alt="Imagen Completa">
+            <div class="close-btn" onclick="closeLightbox(event)">×</div>
             </div>
         </div>
         <div class="proyect">
             <div class="proyect-img">
-                <img src="statics/img/giffy.webp" onclick="openLightbox()">
+                <img class="lightbox-trigger" src="statics/img/giffy.webp" onclick="openLightbox(this)" >
             </div>
             <div id="en" class="hidden">
                 <h4>GIF Search App</h4>
@@ -133,15 +133,10 @@
                 </a>
             </div>
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <div class="lightbox-img">
-                <img src="statics/img/giffy.webp" alt="Imagen Completa giffy">
-            <div class="close-btn" onclick="closeLightbox()">×</div>
-            </div>
-        </div>
+        
         <div class="proyect">
              <div class="proyect-img">
-                 <img src="statics/img/tictactoe.webp" onclick="openLightbox()">
+                 <img class="lightbox-trigger" src="statics/img/tictactoe.webp" onclick="openLightbox(this)">
              </div>
              <div id="es">
                  <h4>Juego de Tres en Raya</h4>
@@ -179,15 +174,10 @@
                  </a>
              </div>
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <div class="lightbox-img">
-                <img src="statics/img/seoweb.webp" alt="Imagen Completa seoweb">
-            <div class="close-btn" onclick="closeLightbox()">×</div>
-            </div>
-        </div> 
+        
         <div class="proyect">
              <div class="proyect-img">
-                 <img src="statics/img/seoweb.webp" onclick="openLightbox()">
+                 <img class="lightbox-trigger" src="statics/img/seoweb.webp" onclick="openLightbox(this)">
              </div>
              <div id="es">
                  <h4>Aplicación Seo(en desarrollo)</h4>
@@ -229,12 +219,7 @@
                  </a>
              </div>
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <div class="lightbox-img">
-                <img src="statics/img/seoweb.webp" alt="Imagen Completa tictactoe.webp">
-            <div class="close-btn" onclick="closeLightbox()">×</div>
-            </div>
-        </div>             
+                   
         
     </section>
     <div id="en" class="hidden">
