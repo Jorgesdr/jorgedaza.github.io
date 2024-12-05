@@ -1,5 +1,5 @@
 # Portfolio Jorge Daza
 Portfolio
 
-url => https://jorgesdr.github.io/portfolio/
+url => https://jorgesdr.github.io
 
